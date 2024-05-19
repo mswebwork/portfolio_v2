@@ -52,9 +52,12 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/boxicons/css/boxicons.min.css",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/boxicons/dist/boxicons.js"
+            ]
           },
           "configurations": {
             "production": {

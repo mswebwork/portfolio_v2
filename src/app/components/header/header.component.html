@@ -1,1 +1,38 @@
-<p>header works!</p>
+<header class="header">
+  <a href="#" class="logo">Marcin.</a>
+
+  <box-icon name='menu' id="menu-icon" size="3.6rem" color="var(--text-color)"></box-icon>
+
+  <nav class="navbar" >
+    <a routerLink="/portfolio"
+       fragment="home"
+       [class.activeLink]="(activeFragment | async) === 'home'"
+    >Home</a>
+
+    <a routerLink="/portfolio"
+       fragment="about"
+       [class.activeLink]="(activeFragment | async) === 'about'"
+    >About Me</a>
+
+    <a routerLink="/portfolio"
+       fragment="exp"
+       [class.activeLink]="(activeFragment | async) === 'exp'"
+    >Experience</a>
+
+    <a routerLink="/portfolio"
+       fragment="services"
+       [class.activeLink]="isSectionActive('services')"
+    >Services</a>
+
+    <a routerLink="/portfolio"
+       fragment="projects"
+       [class.activeLink]="isSectionActive('projects')"
+    >Projects</a>
+
+    <a routerLink="/portfolio"
+       fragment="contact"
+       [class.activeLink]="isSectionActive('contact') "
+    >Contact</a>
+  </nav>
+
+</header>
